@@ -34,5 +34,8 @@ This virtual assistant can handle multiple command such as "open the bluetooth a
 
 ## More detail for this virtual assistant
 
-You can check out my master's thesis for more detail: https://github.com/r06922085/Master-s-thesis
+You can check out my master's thesis for more detail: 
+
+https://github.com/r06922085/Master-s-thesis
+
 This thesis hasn't finished yet but will keep up to date.
