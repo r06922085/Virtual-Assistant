@@ -39,3 +39,6 @@ You can check out my master's thesis for more detail:
 https://github.com/r06922085/Master-s-thesis
 
 This thesis hasn't finished yet but will keep up to date.
+
+## Author
+-Liocean: https://github.com/r06922085
