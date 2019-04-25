@@ -1,40 +1,38 @@
-## To train and test the domain classification model:
-python domain_classification.py --train
+# Virtual assistant
 
-python domain_classification.py --test
+## What is this?
+It is a vitual asssitant that can help you do some simple tasks such as below:
 
-## To train and test the slot filling model:
-python slot_filling.py --train
+1.打開/關掉wifi (turn on/off wifi)
 
-python slot_filling.py --test
+2.打開/關掉藍芽 (turn on/off the bletooth)
 
-## To create the domain classification/slot filling data:
-python create_all_data --datatype create_all
+3.調亮/調暗銀幕亮度 (brighten/darken the screen)
 
-## The things that virtual assistant can do:
-* 打開app
-* 計算機
-* 搜尋
-* 查時間
-* 提醒(行事曆)
-* 定鬧鐘
-* 天氣
-* 打電話
-* 關機
-* 銀幕調亮/暗
-* 音量調大/小
-* 拍照
-* 打開/關閉 wifi
-* 打開/關閉 bluetooth
+4.調大/調小音量 (volume up/down)
 
-## The basic idea of the virtual assistant:
-To achieve the goal, we need to let virtaul assistant understanding our language. It mainly depart to two part:
-* domain classification
-* slot filling
+5.打開相機 (open the camera)
 
-First part is to determine which domain of goal. For example, what's the weather is for "weather" 
-and turn on the wifi is for "turn_on_wifi"
+6.關機 (turn off the device)
 
-And the second part is slot filling, it is the further step after knowing the domain. 
-For example, when we know that it's the "weather" doamin, we need to know more information like 'where' 、 'when'.
-This is the job that be done on this step
+7.簡單自我介紹 (introduction)
+
+
+## Language
+
+This virtual assistant can only understand chinese, but can be transformed into English or other languages if there are training data, our model is fixable for different languages.
+
+## how it works?
+
+It use deep seq2seq model that shown as below. This is a end to end model, so there are no preprocessing for
+ the input of output or any of stage in the middle, it's a complete deep learning model.
+<img src="https://cdn-images-1.medium.com/max/1600/1*44eDEuZBEsmG_TCAKRI3Kw@2x.png" width="50%" height="50%">
+
+## what's the specialty of this virtual assistant?
+
+This virtual assistant can handle multiple command such as "open the bluetooth and darken the screen". As I know, SIRI can't do this.
+
+## More detail for this virtual assistant
+
+You can check out my master's thesis for more detail: https://github.com/r06922085/Master-s-thesis
+This thesis hasn't finished yet but will keep up to date.
